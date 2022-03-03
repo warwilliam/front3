@@ -1,11 +1,13 @@
-
-import './App.css';
-import homemFeliz from '../src/homem-feliz-dinheiro.jpg'
+import { Card } from "./components/Card";
+import './app.css'
 
 function App() {
   return (
-       
-      <img src={homemFeliz} className="App-logo" alt="homem feliz"/>
+      <>
+    <h1 className="title" >Estude com afinco e alcance o sucesso assim como o Leopoldo!</h1>
+    <Card/>  
+    </>
+     
         
 
   );
