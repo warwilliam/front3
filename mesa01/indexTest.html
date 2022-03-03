@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using React</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container"></div>
+    
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="" ></script>
+
+    <script type="text/babel">
+
+       /*  let h1 = React.createElement("h1", {style:{
+            display: 'flex',
+            justifyContent: 'center',
+            padding: '20px',
+            fontSize: '3em'
+        },
+        id: "title"}, "Olá Mundo!");
+
+        let name = React.createElement("p" , {style:{
+            fontSize: '2em'
+        },
+        id: "name"}, "Nome: Vinícius Alexandre Costa Marcelino")
+
+        let age = React.createElement("p" , {style:{
+            fontSize: '2em'
+        },
+        id: "age"}, "Idade: 19 anos")
+
+        let pic = React.createElement("img" , {id: "pic", src: "img/Screenshot_1.png"})
+
+        let data = React.createElement("div", {id: "data"}, [pic, name, age],
+        );
+
+        let container = React.createElement("div",{id: "main"},[ h1, data ]); */
+
+        var container = <div>
+        <h1>Hello World</h1>
+        <ul>
+        <li>Maca</li>
+        <li>Banana</li>
+        <li>Laranja</li>
+        </ul>
+        <img src="./logo.png" alt="">
+        </div>
+
+        ReactDOM.render(container, document.getElementById("container"));
+
+    </script>
+    
+</body>
+</html>

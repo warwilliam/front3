@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using React</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container"></div>
+    
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+
+       function Box(){
+           
+           return(
+               <><h1>Item</h1>
+               <p>preco</p>
+               </>)
+       }
+
+        const frutas = ["laranja", "maca", "banana", "abacaxi"]
+        
+
+        function handleButton(){
+            alert("ok")
+        }
+
+        var container = <div>
+        <Box item="Geladeira" preco="5000"/>
+        <Box item="Fogao" preco="500"/>
+        <Box item="Sofa"/>
+        <Box item="Hack"/>
+        <h1>Hello World</h1>
+        <ul>
+{
+frutas.map((item, index)=>{
+    return <li key={index.toString()}>{item}</li>
+})}
+        </ul>
+        <img src="./logo.png"/>
+        <button onClick={handleButton}>Pressionar Aqui</button>
+        </div>
+
+        ReactDOM.render(container, document.getElementById("container"));
+
+    </script>
+    
+</body>
+</html>

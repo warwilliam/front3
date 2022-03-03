@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Front End 3 mesa 01</title>
+  </head>
+  <body>
+    <div id="container">
+    </div>
+
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script>
+
+      var h1 = React.createElement("h1", {style:{color:'grey', backgorundColor: "#FFF"}, id:"title"}, "Ola turma 1, somos a equipe 4");
+
+      var h2 = React.createElement("h2",{}, "Conheca nosso time:")  
+      
+      var p1 = React.createElement("h3",{style:{color: "red"}}, "Ailla Freire De Azevedo");
+
+      var p2 = React.createElement("h3",{style:{color: "grey"}}, "Mateus Benites Dias");
+
+      var p3 = React.createElement("h3",{style:{color: "red"}}, "Nayla Honorato Da Silva");
+
+      var p4 = React.createElement("h3",{style:{color: "grey"}}, "Túlio Marinho");
+
+      var p5 = React.createElement("h3",{style:{color: "red"}}, "Vinícius Alexandre Marcelino");
+
+      var p6 = React.createElement("h3",{style:{color: "grey"}}, "WIlliam Rodrigues");
+
+      var button = React.createElement("button",{onClick: ()=>alert('Valeu!')},"Deixa seu like!")
+
+      var container = React.createElement("div",{},[h1,p1,p2,p3,p4,p5,p6,button]);
+
+      ReactDOM.render(container, document.getElementById("container"));
+    </script>
+  </body>
+</html>

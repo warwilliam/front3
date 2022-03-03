@@ -1,0 +1,21 @@
+.header_container{
+    background: red;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo_header{
+    width: 60px;
+    height: 60px;
+    margin: 20px;
+}
+
+.list_item{
+    list-style: none;
+    color: #fff;
+    display: flex;
+}
+
+.item{
+    margin: 0 10px
+}
